@@ -67,7 +67,7 @@ class HRFPN(nn.Module):
                     padding=1
                 ))
         if pooling == 'MAX':
-            print("Using AVG Pooling")
+            print("Using MAX Pooling")
             self.pooling = F.max_pool2d
         else:
             self.pooling = F.avg_pool2d
